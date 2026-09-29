@@ -20,6 +20,6 @@ export const birthday = {
     'Thank you for every laugh, every 2am talk, and every little moment in between. ' +
     'You make the ordinary days feel special just by being you. ' +
     'I hope this year is as wonderful and warm as you are. Here’s to us. ♡',
-  song: '', // e.g. '/assets/our-song.mp3'. Empty uses an original, gentle music-box melody.
+  song: `${B}assets/our-song.mp3`, // Drop your mp3 at public/assets/our-song.mp3. Empty ('') uses a gentle built-in melody.
   soundEffects: { pop: '', heart: '', blow: '', celebrate: '' }, // Optional files; empty uses synthesized sounds.
 };

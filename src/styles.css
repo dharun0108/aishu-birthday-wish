@@ -31,4 +31,12 @@
 .fight-loader.reduced .boy,.fight-loader.reduced .girl,.fight-loader.reduced .clash,.fight-loader.reduced .mark{animation:none}
 .fight-loader.reduced .mark{opacity:0}
 @media(prefers-reduced-motion:reduce){.boy,.girl,.clash,.mark{animation:none!important}.mark{opacity:0}}
+.gift-gate{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(circle at 50% 35%,#fffaf4 0%,#f7e5e4 70%,#efd9e0 120%)}
+.gift-gate-card{text-align:center;display:flex;flex-direction:column;align-items:center;gap:16px;max-width:340px}
+.gift-emoji{font-size:clamp(56px,16vw,74px);animation:gift-bounce 1.6s ease-in-out infinite;filter:drop-shadow(0 8px 14px rgba(73,53,79,.2))}
+.gift-title{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(30px,7vw,44px);line-height:1.15;margin:0;color:#49354f;letter-spacing:-1px}
+.gift-title span{color:var(--rose)}
+.gift-sub{font-family:'Caveat',cursive;font-size:clamp(20px,5.5vw,24px);color:#9c647b;margin:0 0 6px}
+@keyframes gift-bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(prefers-reduced-motion:reduce){.gift-emoji{animation:none}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
